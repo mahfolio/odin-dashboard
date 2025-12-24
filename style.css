@@ -1,0 +1,5 @@
+p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: clamp(0.9rem, (0.9rem + 1vw), 1.7rem);
+}
