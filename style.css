@@ -1,0 +1,83 @@
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto 1fr;
+    height: 100vh;
+}
+
+header {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+    background-color: #1992d4;
+    color: white;
+}
+
+header .logo-wrapper{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    gap: 5px;
+}
+
+header .logo-wrapper h1{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+header .logo-wrapper .logo {
+    width: 48px;
+    height: 48px;
+    justify-self: center;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-bottom: 5px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 7px 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    gap: 5px;
+}
+
+header .icon {
+    justify-self: center;
+}
+
+.search-notific {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.profile-links {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.content {
+    grid-column: 2;
+    grid-row: 3;
+}
