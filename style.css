@@ -183,6 +183,7 @@ header .icon {
 
         &:active {
           transform: scale(0.9); /* Shrinks slightly */
+        }
       }
     }
   }
